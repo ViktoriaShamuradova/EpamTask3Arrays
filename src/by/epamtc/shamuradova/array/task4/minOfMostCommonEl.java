@@ -1,4 +1,4 @@
-package by.epamtc.array.task4;
+package by.epamtc.shamuradova.array.task4;
 
 public class minOfMostCommonEl {
 

@@ -1,6 +1,7 @@
-package by.epamtc.array.task5;
+package by.epamtc.shamuradova.array.task5;
 
 public class SumOfMaxAndMin {
+
     public static int sumOfMaxAndMinElement(int[] array) {
         int max = array[1];
         int min = array[0];
@@ -9,7 +10,7 @@ public class SumOfMaxAndMin {
                 if (array[i] < min) {
                     min = array[i];
                 }
-            } else {//то есть четные
+            } else {
                 if (array[i] > max) {
                     max = array[i];
                 }

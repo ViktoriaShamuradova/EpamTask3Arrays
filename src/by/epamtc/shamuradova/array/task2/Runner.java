@@ -1,4 +1,4 @@
-package by.epamtc.array.task2;
+package by.epamtc.shamuradova.array.task2;
 
 import java.util.Arrays;
 

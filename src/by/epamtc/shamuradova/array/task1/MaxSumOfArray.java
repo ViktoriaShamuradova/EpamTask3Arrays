@@ -1,4 +1,4 @@
-package by.epamtc.array.task1;
+package by.epamtc.shamuradova.array.task1;
 
 public class MaxSumOfArray {
 

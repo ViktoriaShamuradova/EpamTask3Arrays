@@ -1,8 +1,9 @@
-package by.epamtc.array.task3;
+package by.epamtc.shamuradova.array.task3;
 
 import java.util.Arrays;
 
 public class Lock {
+
     private final int[] CELLS = new int[10];
 
     public int[] getCELLS() {
@@ -10,9 +11,11 @@ public class Lock {
     }
 
     public void insert(Dice dice, int cell) {
+
         if (cell < 0 || cell > 9) throw new RuntimeException();
         CELLS[cell] = dice.getFrontFaceValue();
     }
+
     public boolean isOpen() {
         for (int i = 0; i < CELLS.length-2; i++) {
             if (CELLS[i] != 0 && CELLS[i + 1] != 0 && CELLS[i + 2] != 0) {

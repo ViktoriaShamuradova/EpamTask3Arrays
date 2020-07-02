@@ -1,9 +1,10 @@
-package by.epamtc.array.task3;
+package by.epamtc.shamuradova.array.task3;
 
 import java.util.Random;
 
 
 public class Runner {
+
     public static void main(String[] args) {
 
         Lock lock = new Lock();
@@ -15,7 +16,6 @@ public class Runner {
         System.out.println(lock);
 
     }
-
     public static void randomInsert(Lock lock) {
         Random random = new Random();
 

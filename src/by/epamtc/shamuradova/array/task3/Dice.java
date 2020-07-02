@@ -1,25 +1,32 @@
-package by.epamtc.array.task3;
+package by.epamtc.shamuradova.array.task3;
 
 
 import java.util.Objects;
 
 public class Dice {
     private int frontFaceValue;
+    private static final int SIDE_COUNT = 6;
 
     public Dice(int frontFaceValue) {
+
+        setFrontFaceValue(frontFaceValue);
+    }
+
+
+    private void setFrontFaceValue(int frontFaceValue) {
         if (frontFaceValue < 1 || frontFaceValue > 6) throw new RuntimeException();
         this.frontFaceValue = frontFaceValue;
     }
 
-
-
-    public void setFrontFaceValue(int frontFaceValue) {
-        this.frontFaceValue = frontFaceValue;
-    }
-
     public int getFrontFaceValue() {
+
         return frontFaceValue;
     }
+
+    public static int getSideCount() {
+        return SIDE_COUNT;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -30,6 +37,7 @@ public class Dice {
 
     @Override
     public int hashCode() {
+
         return Objects.hash(frontFaceValue);
     }
 
