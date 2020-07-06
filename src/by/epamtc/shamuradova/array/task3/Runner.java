@@ -15,7 +15,10 @@ public class Runner {
         System.out.println(iteration);
         System.out.println(lock);
 
+
+
     }
+
     public static void randomInsert(Lock lock) {
         Random random = new Random();
 
